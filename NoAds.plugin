@@ -8,6 +8,10 @@
 #!date = 2024-10-13
 
 
+[General]
+# 仅对 TCP 协议的具体端口做 HTTP 识别
+force-http-engine-hosts = 118.178.168.156:8091, 47.111.8.123:8091
+
 [Rewrite]
 # 懂球帝开屏广告
 ^https?:\/\/ap\.dongqiudi\.com\/plat reject
