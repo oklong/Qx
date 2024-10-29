@@ -15,9 +15,10 @@ force-http-engine-hosts = 118.178.168.156:8091, 47.111.8.123:8091
 [Rewrite]
 # 懂球帝开屏广告
 ^https?:\/\/ap\.dongqiudi\.com\/plat reject
+^https:\/\/ap\.your724sports\.com\/plat\/v4\? url reject-dict
 
 # 直播吧开屏广告
 ^https?:\/\/(118\.178\.168\.156|47\.111\.8\.123):8091\/allOne\.php\? reject
 
 [MitM]
-hostname = ap.dongqiudi.com, 118.178.168.156, 47.111.8.123
+hostname = ap.dongqiudi.com, ap.your724sports.com, 118.178.168.156, 47.111.8.123
